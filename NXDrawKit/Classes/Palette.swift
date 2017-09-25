@@ -60,7 +60,7 @@ open class Palette: UIView
     }
     
     open func setup() {
-        self.backgroundColor = UIColor(colorLiteralRed: 0.22, green: 0.22, blue: 0.21, alpha: 1.0)
+        self.backgroundColor = UIColor.init(red: 0.22, green: 0.22, blue: 0.21, alpha: 1.0)
         self.setupColorView()
         self.setupAlphaView()
         self.setupWidthView()
