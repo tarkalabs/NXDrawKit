@@ -82,23 +82,23 @@ class ViewController: UIViewController
         self.toolBar?.clearButton?.isEnabled = canvas.canClear()
     }
     
-    func onClickUndoButton() {
+  @objc func onClickUndoButton() {
         self.canvasView?.undo()
     }
 
-    func onClickRedoButton() {
+  @objc func onClickRedoButton() {
         self.canvasView?.redo()
     }
 
-    func onClickLoadButton() {
+  @objc func onClickLoadButton() {
         self.showActionSheetForPhotoSelection()
     }
 
-    func onClickSaveButton() {
+  @objc func onClickSaveButton() {
         self.canvasView?.save()
     }
 
-    func onClickClearButton() {
+  @objc func onClickClearButton() {
         self.canvasView?.clear()
     }
 
@@ -119,7 +119,7 @@ class ViewController: UIViewController
     }
     
     fileprivate func showCamera() {
-        let status = AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo)
+      let status = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
         
         switch (status) {
         case .notDetermined:

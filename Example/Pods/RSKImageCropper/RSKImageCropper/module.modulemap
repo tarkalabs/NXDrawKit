@@ -1,6 +1,7 @@
-framework module RSKImageCropper {
-    umbrella header "RSKImageCropper.h"
+//framework module RSKImageCropper {
+//    umbrella header "RSKImageCropper.h"
+//
+//    export *
+//    module * { export * }
+//}
 
-    export *
-    module * { export * }
-}
